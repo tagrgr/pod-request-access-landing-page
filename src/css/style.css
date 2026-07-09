@@ -1,18 +1,28 @@
+:root {
+    --green: #54E6AF;
+    --slate-950: #121725;
+    --white: #fff;
+}
+
 body {
     font-family: "Chivo", sans-serif;
-    background-color: var(--color-slate-950, #121725);
+    background-color: var(--slate-950);
 }
 
 .img-container {
-    background: url(/assets/desktop/image-host.jpg) no-repeat top right / 60%;
+    background: url(/assets/desktop/bg-pattern-dots.svg), url(/assets/desktop/image-host.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom right, top right;
+    background-size: auto, 1110px;
+    margin: 153px 0 100px clamp(24px, 11vw, 160px);
+    padding-bottom: 50px;
 }
 
 .img-container .container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 800px;
-    margin: 153px 0 153px 160px;
+    min-height: 801px;
 }
 
 .img-container .container .head img {
@@ -21,8 +31,8 @@ body {
 }
 
 .img-container .container .info {
-    background-color: var(--color-slate-950, #121725);
-    width: 836px;
+    background-color: var(--slate-950);
+    max-width: 836px;
     padding-right: 71px;
 }
 
@@ -31,13 +41,13 @@ body {
     font-size: 60px;
     line-height: 120%;
     text-transform: uppercase;
-    color: #54E6AF;
+    color: var(--green);
     margin-top: 88px;
     margin-bottom: 24px;
 }
 
 .img-container .container .info h1 .span-h1 {
-    color: #fff;
+    color: var(--white);
 }
 
 .img-container .container .info p {
@@ -49,8 +59,8 @@ body {
 }
 
 .img-container .container .info .btn-request {
-    width: 448px;
-    height: 52px;
+    max-width: 448px;
+    max-height: 52px;
     display: flex;
     justify-content: space-between;
     border-radius: 999px;
@@ -62,28 +72,26 @@ body {
 
 .img-container .container .info .btn-request .email {
     background-color: transparent;
-    display: flex;
-    justify-content: space-between;
     border-radius: 999px;
     border: 0;
     padding: 4px 24px;
-    width: 300px;
+    max-width: 300px;
 }
 
 .img-container .container .info .btn-request .email::placeholder {
-    color: #fff;
+    color: var(--white);;
     opacity: 0.5;
+    font-weight: 600;
 }
 
 .img-container .container .info .btn-request .email:focus {
-    outline: 1px solid #2C344B;  /* your green */
+    outline: 1px solid #2C344B;
 }
 
-.img-container .container .info .btn-request .btn {
-    padding: 4px;
+.img-container .container .info .btn-request .btn-itself {
+    padding: 4px 20px;
     border-radius: 999px;
-    width: 172px;
-    background-color: #54E6AF;
+    background-color: var(--green);
     border: none;
     color: #121725;
     font-weight: 600;
@@ -96,7 +104,3 @@ body {
 .img-container .container .info .foot {
     word-spacing: 2em;
 }
-
-/* .img-container .dots-style {
-    background: url(/assets/desktop/bg-pattern-dots.svg) no-repeat bottom right / 60%;
-} */

@@ -1,0 +1,35 @@
+@media (min-width:550px) and (max-width: 900px) {
+    .img-container {
+        background: url(/assets/desktop/bg-pattern-dots.svg), url(/assets/tablet/image-host.jpg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: bottom 30px right -125px, top right;
+        padding-bottom: 50px;
+        margin: 0;
+    }
+
+    .img-container .container {
+        height: 712px;
+        padding: 40px 132px clamp(24px, 11vw, 156px) 44px;
+    }
+
+    .img-container .container .info {
+        max-width: 592px;
+        margin: 68px 64px 40px 0;
+    }
+
+    .img-container .container .info h1 {
+        margin-top: 60px;
+    }
+
+    .img-container .container .info p {
+        padding-right: 0;
+    }
+
+    .img-container .container .info .btn-request {
+        margin: 40px 80px 40px 0;
+    }
+
+    .img-container .container .info .foot {
+        word-spacing: 1em;
+    }
+}
