@@ -25,10 +25,12 @@
         <p>Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
         Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
         
-        <form class="btn-request">
-          <input class="email" type="email" placeholder="Email address">
+        <form id="form-email" class="btn-request" novalidate>
+          <input id="address-email" class="email" type="email" placeholder="Email address" pattern="[^\s@]+@[^\s@]+\.[^\s@]+" required>
           <button class="btn-itself">Request Access</button>
+          
         </form>
+        <p class="error-msg">Oops! Please check your email</p>
 
         <footer class="foot">
           <img src="./assets/desktop/spotify.svg" alt="spotify logo">

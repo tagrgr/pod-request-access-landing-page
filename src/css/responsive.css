@@ -31,6 +31,14 @@
     .img-container .container .info .btn-request {
         margin: 40px 80px 40px 0;
     }
+
+    .img-container .container .info .foot {
+        word-spacing: 1.5em;
+    }
+
+    .img-container .container .info .foot img {
+        max-width: 125px;
+    }
 }
 
 @media (min-width:325px) and (max-width: 549px) {
