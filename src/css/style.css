@@ -60,7 +60,7 @@ body {
 
 .img-container .container .info .btn-request {
     max-width: 448px;
-    max-height: 52px;
+    height: 52px;
     display: flex;
     justify-content: space-between;
     border-radius: 999px;
@@ -99,6 +99,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .img-container .container .info .foot {
