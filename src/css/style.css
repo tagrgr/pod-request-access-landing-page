@@ -10,7 +10,7 @@ body {
 }
 
 .img-container {
-    background: url(/assets/desktop/bg-pattern-dots.svg), url(/assets/desktop/image-host.jpg);
+    background: url(../../assets/desktop/bg-pattern-dots.svg), url(../../assets/desktop/image-host.jpg);
     background-repeat: no-repeat, no-repeat;
     background-position: bottom right, top right;
     background-size: auto, 1110px;
